@@ -1,0 +1,227 @@
+ /* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+/* common styles */
+header h1{
+   margin-left: 60px;
+   margin-top: 80px;
+   font-size: 24px;
+}
+body{
+   font-family: 'Poppins', sans-serif;
+   background-color: white;
+
+}
+
+/* Top Half */
+main{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+.container{
+   width: 90%;
+   padding: 50px;
+   margin-top: 21px;
+   border-radius: 5px;
+
+}
+.top-half{
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+}
+/* .responsive{
+  width: 65%;
+  height: auto;
+} */
+.top-half img{
+   margin-left: 140px;
+   position: relative;
+   top: -20x;
+}
+.purchases{
+   display: flex;
+   align-items: center;
+}
+.purchase-info h1{
+   font-size: 52px;
+   margin: 0;
+}
+.purchase-btn{
+   text-decoration: none;
+   padding: 10px 24px;
+   border-radius: 20px;
+   background-color: #E02C6D;
+   color: white;
+   font-weight: 500;
+   position: relative;
+   top: 10px;
+}
+.purchase-btn .fas{
+   margin-left: 10px;
+}
+.logos{
+   display: flex;
+   align-items: center;
+}
+.logo{
+   display: grid;
+   grid-template-columns: repeat(7, 1fr);
+   width: 60%;
+   justify-content: center;
+   margin-left: 20%;
+   border: 1px solid whitesmoke;
+   padding: 5px 10px;
+   justify-content: space-around;
+   margin-top: 50px;
+}
+
+/* Popular Collection Styles */
+.section-title{
+   text-align: center;
+   margin-bottom: 30px;
+}
+.collections{
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-column-gap: 30px;
+   grid-row-gap: 30px;
+    /* margin-left: 10px; */
+   
+   
+}
+.collection{
+   box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+   padding: 15px 20px;
+   border-radius: 5px;
+   justify-content: center;
+   align-items: center;
+   width: 300px;
+   height: 500px;
+}
+.collection .collection-banner img{
+   width: 300px;
+   height: 256px;
+}
+.collection-detail h3{
+   font-size: 28px;
+   font-weight: 550;
+}
+.collection-detail h4{
+   margin-bottom: 10px;
+   font-size: 24px;
+   font-weight: normal;
+}
+.fa-star, .fa-star-half-alt{
+   font-size: 12px;
+}
+.fa-star.filled{
+   color: #FB8200;
+}
+.fa-star-half-alt.filled{
+   color: #FB8200;
+}
+.collection-info h6{
+   margin: 0;
+   font-size: 14px;
+   color: #787885;
+   
+}
+.seemore-btn{
+   text-decoration: none;
+   padding: 10px 24px;
+   border-radius: 20px;
+   background-color: white;
+   color: #E02C6D;
+   font-weight: 700;
+   position: relative;
+   right: -1150px;
+   font-size: 20px
+}
+
+/* last half  */
+
+.last-half{
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   grid-row-gap: 30px;
+}
+.com-info h1{
+   font-size: 40px;
+}
+.last-half img{
+   width: 70%;
+   margin-left: 90px;
+   margin-top: 20px;
+}
+
+/* Footer  */
+footer{
+   text-align: center;
+   background-color: #0a0826;
+   padding: 15px 20px;
+   color: white;
+   width: 100%;
+   position: relative;
+}
+footer h2{
+   font-weight: 500;
+   margin: 0;
+}
+footer h5, p{
+   font-weight: 200;
+   margin: 0;
+   color: gray;
+}
+footer .fab, .fas{
+   margin-top: 20px;
+   margin-left: 20px;
+
+}
+
+/* Media Quaries */
+
+/* Mobile Devices */
+
+@media only screen and (max-width:688px) {
+   .container{
+      width: 100%;
+   }
+   .top-half, .collections, .last-half{
+      grid-template-columns: repeat(1, 1fr);
+   }
+   .logo{
+      grid-template-columns: repeat(3, 1fr);
+   }
+   .purchase-info p{
+      margin-left: 10px;
+   }
+   .collection{
+      margin-left: 20px;
+      margin-right: 20px;
+   }
+
+   .seemore-btn{
+      margin-left: -1000px;
+      text-align: center;
+      font-size: 30px;
+   }
+
+   .responsive{
+   width: 100%;
+   height: 100%;
+   left: -120px;
+   top: 40px;
+   }
+
+   .last-half img{
+      margin-left: -10px;
+   }
+   .purchase-info, .collection, .com-info{
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+   }
+   
+}
