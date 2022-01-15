@@ -225,3 +225,40 @@ footer .fab, .fas{
    }
    
 }
+
+/* Tablet Devices */
+
+@media only screen and (min-width:688px) and (max-width:992px) {
+   .container{
+      width: 50%;
+   }
+   .logo{
+      grid-template-columns: repeat(3, 1fr);
+   }
+   .top-half, .collections{
+      grid-template-columns: repeat(2, 1fr);
+   }
+   .last-half{
+      grid-template-columns: repeat(2, 1fr);
+   }
+   .com-info{
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+   }
+   .com-info img{
+      width: 350%;
+   }
+
+   .purchase-info, .collection, .head{
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+   }
+   footer{
+      width: 160%;
+      position: relative;
+   }
+
+}
