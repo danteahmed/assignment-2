@@ -140,6 +140,12 @@ main{
    font-size: 24px;
    font-weight: normal;
 }
+.collection-detail{
+   margin: 0;
+}
+/* .collection-rating{
+   margin: 0;
+} */
 .fa-star, .fa-star-half-alt{
    font-size: 12px;
 }
