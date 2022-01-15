@@ -135,7 +135,7 @@ main{
    color: #E02C6D;
    font-weight: 700;
    position: relative;
-   right: -1300px;
+   right: -1150px;
    font-size: 20px
 }
 
@@ -245,6 +245,11 @@ footer .fab, .fas{
       text-align: center;
       justify-content: center;
       align-items: center;
+   }
+   .seemore-btn{
+      margin-left: -1090px;
+      text-align: center;
+      font-size: 50px;
    }
    .com-info img{
       width: 350%;
