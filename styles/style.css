@@ -55,7 +55,35 @@ main{
    color: white;
    font-weight: 500;
    position: relative;
-   top: 10px;
+   top: 30px;
+   transition: all 0.5s;
+   cursor: pointer;
+}
+.purchase-btn span{
+   cursor: pointer;
+   display: inline-block;
+   position: relative;
+   transition: 0.5s;
+}
+.purchase-btn span:after{
+   font-family: "Font Awesome 5 Free";
+   content: "\f07a";
+   display: inline-block;
+   vertical-align: middle;
+   font-weight: 900;
+   position: absolute;
+   opacity: 0;
+   top: 3px;
+   right: -30px;
+   transition: 0.5s;
+}
+.purchase-btn:hover span{
+   padding-right: 25px;
+   padding-left: 25px;
+}
+.purchase-btn:hover span:after{
+   opacity: 1;
+   right: 0;
 }
 .purchase-btn .fas{
    margin-left: 10px;
